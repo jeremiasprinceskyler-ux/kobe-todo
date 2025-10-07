@@ -301,3 +301,99 @@ transition: background 0.3s ease, border-color 0.3s ease;
   width: 150px;
   /* adjust the size as needed */
 }
+/* 🌐 RESPONSIVE DESIGN FIXES */
+@media (max-width: 768px) {
+  /* Stack sidebar and main content */
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* Sidebar adjustments */
+  .sidebar {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid pink;
+    border-radius: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .sidebar .button-bar button {
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+
+  /* Main section adjusts below sidebar */
+  .main {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Search bar moves to top, not absolute */
+  .search-bar {
+    position: relative;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  /* Add task bar fixed at bottom */
+  .add-task-bar {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  /* Tasks stretch full width */
+  .task-list {
+    margin-left: 0;
+    padding: 8px;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .details button {
+    width: 100%;
+  }
+
+  /* Reduce text size slightly */
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .details p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar .button-bar button {
+    flex: 1 1 100%;
+  }
+
+  .add-task-bar {
+    font-size: 12px;
+    min-height: 35px;
+  }
+
+  .details button {
+    min-width: 100%;
+  }
+}
