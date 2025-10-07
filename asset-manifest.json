@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kobe-todo/static/css/main.7ba0e24d.css",
+    "main.js": "/kobe-todo/static/js/main.76acc225.js",
+    "static/js/453.96453769.chunk.js": "/kobe-todo/static/js/453.96453769.chunk.js",
+    "index.html": "/kobe-todo/index.html",
+    "main.7ba0e24d.css.map": "/kobe-todo/static/css/main.7ba0e24d.css.map",
+    "main.76acc225.js.map": "/kobe-todo/static/js/main.76acc225.js.map",
+    "453.96453769.chunk.js.map": "/kobe-todo/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ba0e24d.css",
+    "static/js/main.76acc225.js"
+  ]
+}
